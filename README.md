@@ -1,46 +1,39 @@
-# 2026 世界盃虛擬下注
+# 2026 世界盃虛擬下注：模型賠率版
 
-GitHub Pages + GitHub Actions 靜態網站。
+這版不使用真實博彩公司賠率，也不需要 API key。
 
-## 架構
+## 賠率基礎
 
-- `index.html`：純前端頁面，只讀取 `data/worldcup2026.json`。
-- `scripts/fetch-worldcup.js`：由 GitHub Actions 執行，抓取世界盃資料並整理成前端格式。
-- `.github/workflows/update-worldcup-data.yml`：每 5 分鐘更新一次資料，也可手動執行。
-- `data/worldcup2026.json`：前端讀取的靜態資料檔。
+1. Elo-like 球隊強度表：每支球隊一個透明的強度分數。
+2. Poisson 分數分布：由兩隊預期進球數推算所有比分機率。
+3. Bookmaker-style margin：在公平賠率上加入水位，讓虛擬賠率比較接近運彩顯示。
 
-## 行為
+## 支援玩法
 
-- 賽事資料讀不到時，前端會停用下注。
-- 下注紀錄與餘額只存在使用者瀏覽器 `localStorage`。
-- 當資料檔有比分結果後，前端會自動結算待結算下注並調整餘額。
+- 勝平負 h2h
+- 讓球 spreads：目前使用半球盤，避免走盤。
+- 正確比分 correct_score：取機率最高的 16 個比分。
 
-## 啟用 GitHub Pages
+## 檔案
 
-到 repo：`Settings` → `Pages`。
+- `index.html`：前端下注頁。
+- `scripts/fetch-worldcup.js`：抓賽事資料並產生模型賠率。
+- `data/worldcup2026.json`：前端讀取的靜態資料。
+- `.github/workflows/update-worldcup-data.yml`：定時更新資料。
 
-設定：
+## 測試
 
-- Source: `Deploy from a branch`
-- Branch: `main`
-- Folder: `/root`
-
-網址會是：
-
-```text
-https://Kan090808.github.io/worldcup2026-bet/
+```bash
+node -c scripts/fetch-worldcup.js
+node scripts/fetch-worldcup.js
 ```
 
-## 手動更新資料
-
-到 `Actions` → `Update World Cup data` → `Run workflow`。
-
-## 更換資料來源
-
-可以在 Actions variables 或 secrets 設定：
+輸出會寫入：
 
 ```text
-WC_SOURCE_URL=https://your-source/worldcup2026.json
+data/worldcup2026.json
 ```
 
-或直接修改 `scripts/fetch-worldcup.js` 的 `SOURCE_URL`。
+## 注意
+
+這是虛擬模型賠率，不是真實博彩公司賠率。Elo-like rating table 是透明種子資料，之後可以改成從公開排名或自建資料源更新。
