@@ -1,6 +1,16 @@
 {
   "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
-  "fetchedAt": "2026-06-27T06:18:48.250Z",
+  "oddsSource": "model",
+  "oddsModel": {
+    "version": "elo-poisson-margin-v1",
+    "basis": [
+      "Elo-like team rating",
+      "Poisson score distribution",
+      "bookmaker-style margin"
+    ],
+    "note": "Virtual model odds only. These are not bookmaker odds."
+  },
+  "fetchedAt": "2026-06-27T06:52:28.433Z",
   "matchCount": 32,
   "matches": [
     {
@@ -15,7 +25,226 @@
       "venue": "Los Angeles (Inglewood)",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": {
+        "source": "Model: Elo + Poisson + margin",
+        "modelVersion": "elo-poisson-margin-v1",
+        "generatedAt": "2026-06-27T06:52:28.432Z",
+        "inputs": {
+          "homeElo": 1605,
+          "awayElo": 1655,
+          "expectedGoalsHome": 1.058,
+          "expectedGoalsAway": 1.367,
+          "margins": {
+            "h2h": 0.06,
+            "spreads": 0.055,
+            "correct_score": 0.12
+          }
+        },
+        "h2h": [
+          {
+            "key": "home",
+            "label": "South Africa 勝",
+            "price": 3.25,
+            "probability": 0.2904,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "draw",
+            "label": "和局",
+            "price": 3.48,
+            "probability": 0.2709,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "away",
+            "label": "Canada 勝",
+            "price": 2.15,
+            "probability": 0.4387,
+            "bookmaker": "Model"
+          }
+        ],
+        "spreads": [
+          {
+            "key": "home",
+            "label": "South Africa +0.5",
+            "point": 0.5,
+            "price": 1.69,
+            "probability": 0.5613,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "away",
+            "label": "Canada -0.5",
+            "point": -0.5,
+            "price": 2.16,
+            "probability": 0.4387,
+            "bookmaker": "Model"
+          }
+        ],
+        "correct_score": [
+          {
+            "key": "1-1",
+            "score": "1-1",
+            "label": "1-1",
+            "homeScore": 1,
+            "awayScore": 1,
+            "price": 6.98,
+            "probability": 0.128,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-1",
+            "score": "0-1",
+            "label": "0-1",
+            "homeScore": 0,
+            "awayScore": 1,
+            "price": 7.38,
+            "probability": 0.1209,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-0",
+            "score": "1-0",
+            "label": "1-0",
+            "homeScore": 1,
+            "awayScore": 0,
+            "price": 9.53,
+            "probability": 0.0936,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-0",
+            "score": "0-0",
+            "label": "0-0",
+            "homeScore": 0,
+            "awayScore": 0,
+            "price": 10.09,
+            "probability": 0.0885,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-2",
+            "score": "1-2",
+            "label": "1-2",
+            "homeScore": 1,
+            "awayScore": 2,
+            "price": 10.21,
+            "probability": 0.0875,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-2",
+            "score": "0-2",
+            "label": "0-2",
+            "homeScore": 0,
+            "awayScore": 2,
+            "price": 10.8,
+            "probability": 0.0826,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-1",
+            "score": "2-1",
+            "label": "2-1",
+            "homeScore": 2,
+            "awayScore": 1,
+            "price": 13.19,
+            "probability": 0.0677,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-0",
+            "score": "2-0",
+            "label": "2-0",
+            "homeScore": 2,
+            "awayScore": 0,
+            "price": 18.02,
+            "probability": 0.0495,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-2",
+            "score": "2-2",
+            "label": "2-2",
+            "homeScore": 2,
+            "awayScore": 2,
+            "price": 19.3,
+            "probability": 0.0463,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-3",
+            "score": "1-3",
+            "label": "1-3",
+            "homeScore": 1,
+            "awayScore": 3,
+            "price": 22.41,
+            "probability": 0.0398,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-3",
+            "score": "0-3",
+            "label": "0-3",
+            "homeScore": 0,
+            "awayScore": 3,
+            "price": 23.72,
+            "probability": 0.0376,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-1",
+            "score": "3-1",
+            "label": "3-1",
+            "homeScore": 3,
+            "awayScore": 1,
+            "price": 37.39,
+            "probability": 0.0239,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-3",
+            "score": "2-3",
+            "label": "2-3",
+            "homeScore": 2,
+            "awayScore": 3,
+            "price": 42.36,
+            "probability": 0.0211,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-0",
+            "score": "3-0",
+            "label": "3-0",
+            "homeScore": 3,
+            "awayScore": 0,
+            "price": 51.09,
+            "probability": 0.0175,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-2",
+            "score": "3-2",
+            "label": "3-2",
+            "homeScore": 3,
+            "awayScore": 2,
+            "price": 54.71,
+            "probability": 0.0163,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-4",
+            "score": "1-4",
+            "label": "1-4",
+            "homeScore": 1,
+            "awayScore": 4,
+            "price": 65.6,
+            "probability": 0.0136,
+            "bookmaker": "Model"
+          }
+        ]
+      }
     },
     {
       "id": "74",
@@ -29,7 +258,8 @@
       "venue": "Boston (Foxborough)",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "75",
@@ -43,7 +273,226 @@
       "venue": "Monterrey (Guadalupe)",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": {
+        "source": "Model: Elo + Poisson + margin",
+        "modelVersion": "elo-poisson-margin-v1",
+        "generatedAt": "2026-06-27T06:52:28.432Z",
+        "inputs": {
+          "homeElo": 1955,
+          "awayElo": 1840,
+          "expectedGoalsHome": 1.621,
+          "expectedGoalsAway": 0.9,
+          "margins": {
+            "h2h": 0.06,
+            "spreads": 0.055,
+            "correct_score": 0.12
+          }
+        },
+        "h2h": [
+          {
+            "key": "home",
+            "label": "Netherlands 勝",
+            "price": 1.74,
+            "probability": 0.5434,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "draw",
+            "label": "和局",
+            "price": 3.8,
+            "probability": 0.248,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "away",
+            "label": "Morocco 勝",
+            "price": 4.52,
+            "probability": 0.2086,
+            "bookmaker": "Model"
+          }
+        ],
+        "spreads": [
+          {
+            "key": "home",
+            "label": "Netherlands -0.5",
+            "point": -0.5,
+            "price": 1.74,
+            "probability": 0.5434,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "away",
+            "label": "Morocco +0.5",
+            "point": 0.5,
+            "price": 2.08,
+            "probability": 0.4566,
+            "bookmaker": "Model"
+          }
+        ],
+        "correct_score": [
+          {
+            "key": "1-0",
+            "score": "1-0",
+            "label": "1-0",
+            "homeScore": 1,
+            "awayScore": 0,
+            "price": 6.85,
+            "probability": 0.1303,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-1",
+            "score": "1-1",
+            "label": "1-1",
+            "homeScore": 1,
+            "awayScore": 1,
+            "price": 7.61,
+            "probability": 0.1173,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-0",
+            "score": "2-0",
+            "label": "2-0",
+            "homeScore": 2,
+            "awayScore": 0,
+            "price": 8.45,
+            "probability": 0.1056,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-1",
+            "score": "2-1",
+            "label": "2-1",
+            "homeScore": 2,
+            "awayScore": 1,
+            "price": 9.39,
+            "probability": 0.0951,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-0",
+            "score": "0-0",
+            "label": "0-0",
+            "homeScore": 0,
+            "awayScore": 0,
+            "price": 11.11,
+            "probability": 0.0804,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-1",
+            "score": "0-1",
+            "label": "0-1",
+            "homeScore": 0,
+            "awayScore": 1,
+            "price": 12.34,
+            "probability": 0.0723,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-0",
+            "score": "3-0",
+            "label": "3-0",
+            "homeScore": 3,
+            "awayScore": 0,
+            "price": 15.65,
+            "probability": 0.0571,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-2",
+            "score": "1-2",
+            "label": "1-2",
+            "homeScore": 1,
+            "awayScore": 2,
+            "price": 16.92,
+            "probability": 0.0528,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-1",
+            "score": "3-1",
+            "label": "3-1",
+            "homeScore": 3,
+            "awayScore": 1,
+            "price": 17.38,
+            "probability": 0.0514,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-2",
+            "score": "2-2",
+            "label": "2-2",
+            "homeScore": 2,
+            "awayScore": 2,
+            "price": 20.87,
+            "probability": 0.0428,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-2",
+            "score": "0-2",
+            "label": "0-2",
+            "homeScore": 0,
+            "awayScore": 2,
+            "price": 27.43,
+            "probability": 0.0326,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "4-0",
+            "score": "4-0",
+            "label": "4-0",
+            "homeScore": 4,
+            "awayScore": 0,
+            "price": 38.61,
+            "probability": 0.0231,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-2",
+            "score": "3-2",
+            "label": "3-2",
+            "homeScore": 3,
+            "awayScore": 2,
+            "price": 38.63,
+            "probability": 0.0231,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "4-1",
+            "score": "4-1",
+            "label": "4-1",
+            "homeScore": 4,
+            "awayScore": 1,
+            "price": 42.89,
+            "probability": 0.0208,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-3",
+            "score": "1-3",
+            "label": "1-3",
+            "homeScore": 1,
+            "awayScore": 3,
+            "price": 56.4,
+            "probability": 0.0158,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-3",
+            "score": "2-3",
+            "label": "2-3",
+            "homeScore": 2,
+            "awayScore": 3,
+            "price": 69.58,
+            "probability": 0.0128,
+            "bookmaker": "Model"
+          }
+        ]
+      }
     },
     {
       "id": "76",
@@ -57,7 +506,226 @@
       "venue": "Houston",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": {
+        "source": "Model: Elo + Poisson + margin",
+        "modelVersion": "elo-poisson-margin-v1",
+        "generatedAt": "2026-06-27T06:52:28.432Z",
+        "inputs": {
+          "homeElo": 2045,
+          "awayElo": 1790,
+          "expectedGoalsHome": 1.989,
+          "expectedGoalsAway": 0.539,
+          "margins": {
+            "h2h": 0.06,
+            "spreads": 0.055,
+            "correct_score": 0.12
+          }
+        },
+        "h2h": [
+          {
+            "key": "home",
+            "label": "Brazil 勝",
+            "price": 1.31,
+            "probability": 0.7185,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "draw",
+            "label": "和局",
+            "price": 4.93,
+            "probability": 0.1913,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "away",
+            "label": "Japan 勝",
+            "price": 10.47,
+            "probability": 0.0901,
+            "bookmaker": "Model"
+          }
+        ],
+        "spreads": [
+          {
+            "key": "home",
+            "label": "Brazil -1.5",
+            "point": -1.5,
+            "price": 2.07,
+            "probability": 0.458,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "away",
+            "label": "Japan +1.5",
+            "point": 1.5,
+            "price": 1.75,
+            "probability": 0.542,
+            "bookmaker": "Model"
+          }
+        ],
+        "correct_score": [
+          {
+            "key": "1-0",
+            "score": "1-0",
+            "label": "1-0",
+            "homeScore": 1,
+            "awayScore": 0,
+            "price": 5.62,
+            "probability": 0.1587,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-0",
+            "score": "2-0",
+            "label": "2-0",
+            "homeScore": 2,
+            "awayScore": 0,
+            "price": 5.66,
+            "probability": 0.1579,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-0",
+            "score": "3-0",
+            "label": "3-0",
+            "homeScore": 3,
+            "awayScore": 0,
+            "price": 8.53,
+            "probability": 0.1046,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-1",
+            "score": "1-1",
+            "label": "1-1",
+            "homeScore": 1,
+            "awayScore": 1,
+            "price": 10.43,
+            "probability": 0.0856,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-1",
+            "score": "2-1",
+            "label": "2-1",
+            "homeScore": 2,
+            "awayScore": 1,
+            "price": 10.49,
+            "probability": 0.0852,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-0",
+            "score": "0-0",
+            "label": "0-0",
+            "homeScore": 0,
+            "awayScore": 0,
+            "price": 11.19,
+            "probability": 0.0798,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-1",
+            "score": "3-1",
+            "label": "3-1",
+            "homeScore": 3,
+            "awayScore": 1,
+            "price": 15.82,
+            "probability": 0.0565,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "4-0",
+            "score": "4-0",
+            "label": "4-0",
+            "homeScore": 4,
+            "awayScore": 0,
+            "price": 17.16,
+            "probability": 0.052,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-1",
+            "score": "0-1",
+            "label": "0-1",
+            "homeScore": 0,
+            "awayScore": 1,
+            "price": 20.74,
+            "probability": 0.0431,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "4-1",
+            "score": "4-1",
+            "label": "4-1",
+            "homeScore": 4,
+            "awayScore": 1,
+            "price": 31.81,
+            "probability": 0.0281,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-2",
+            "score": "1-2",
+            "label": "1-2",
+            "homeScore": 1,
+            "awayScore": 2,
+            "price": 38.66,
+            "probability": 0.0231,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-2",
+            "score": "2-2",
+            "label": "2-2",
+            "homeScore": 2,
+            "awayScore": 2,
+            "price": 38.88,
+            "probability": 0.023,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "5-0",
+            "score": "5-0",
+            "label": "5-0",
+            "homeScore": 5,
+            "awayScore": 0,
+            "price": 43.14,
+            "probability": 0.0207,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-2",
+            "score": "3-2",
+            "label": "3-2",
+            "homeScore": 3,
+            "awayScore": 2,
+            "price": 58.64,
+            "probability": 0.0152,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-2",
+            "score": "0-2",
+            "label": "0-2",
+            "homeScore": 0,
+            "awayScore": 2,
+            "price": 76.89,
+            "probability": 0.0116,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "5-1",
+            "score": "5-1",
+            "label": "5-1",
+            "homeScore": 5,
+            "awayScore": 1,
+            "price": 79.97,
+            "probability": 0.0112,
+            "bookmaker": "Model"
+          }
+        ]
+      }
     },
     {
       "id": "77",
@@ -71,7 +739,8 @@
       "venue": "New York/New Jersey (East Rutherford)",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "78",
@@ -85,7 +754,226 @@
       "venue": "Dallas (Arlington)",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": {
+        "source": "Model: Elo + Poisson + margin",
+        "modelVersion": "elo-poisson-margin-v1",
+        "generatedAt": "2026-06-27T06:52:28.433Z",
+        "inputs": {
+          "homeElo": 1740,
+          "awayElo": 1600,
+          "expectedGoalsHome": 1.639,
+          "expectedGoalsAway": 0.801,
+          "margins": {
+            "h2h": 0.06,
+            "spreads": 0.055,
+            "correct_score": 0.12
+          }
+        },
+        "h2h": [
+          {
+            "key": "home",
+            "label": "Ivory Coast 勝",
+            "price": 1.65,
+            "probability": 0.5731,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "draw",
+            "label": "和局",
+            "price": 3.85,
+            "probability": 0.2451,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "away",
+            "label": "2I 勝",
+            "price": 5.19,
+            "probability": 0.1817,
+            "bookmaker": "Model"
+          }
+        ],
+        "spreads": [
+          {
+            "key": "home",
+            "label": "Ivory Coast -0.5",
+            "point": -0.5,
+            "price": 1.65,
+            "probability": 0.5731,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "away",
+            "label": "2I +0.5",
+            "point": 0.5,
+            "price": 2.22,
+            "probability": 0.4269,
+            "bookmaker": "Model"
+          }
+        ],
+        "correct_score": [
+          {
+            "key": "1-0",
+            "score": "1-0",
+            "label": "1-0",
+            "homeScore": 1,
+            "awayScore": 0,
+            "price": 6.25,
+            "probability": 0.1429,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-0",
+            "score": "2-0",
+            "label": "2-0",
+            "homeScore": 2,
+            "awayScore": 0,
+            "price": 7.62,
+            "probability": 0.1171,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-1",
+            "score": "1-1",
+            "label": "1-1",
+            "homeScore": 1,
+            "awayScore": 1,
+            "price": 7.8,
+            "probability": 0.1144,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-1",
+            "score": "2-1",
+            "label": "2-1",
+            "homeScore": 2,
+            "awayScore": 1,
+            "price": 9.52,
+            "probability": 0.0938,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-0",
+            "score": "0-0",
+            "label": "0-0",
+            "homeScore": 0,
+            "awayScore": 0,
+            "price": 10.24,
+            "probability": 0.0872,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-1",
+            "score": "0-1",
+            "label": "0-1",
+            "homeScore": 0,
+            "awayScore": 1,
+            "price": 12.79,
+            "probability": 0.0698,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-0",
+            "score": "3-0",
+            "label": "3-0",
+            "homeScore": 3,
+            "awayScore": 0,
+            "price": 13.96,
+            "probability": 0.064,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-1",
+            "score": "3-1",
+            "label": "3-1",
+            "homeScore": 3,
+            "awayScore": 1,
+            "price": 17.43,
+            "probability": 0.0512,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-2",
+            "score": "1-2",
+            "label": "1-2",
+            "homeScore": 1,
+            "awayScore": 2,
+            "price": 19.49,
+            "probability": 0.0458,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-2",
+            "score": "2-2",
+            "label": "2-2",
+            "homeScore": 2,
+            "awayScore": 2,
+            "price": 23.79,
+            "probability": 0.0375,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-2",
+            "score": "0-2",
+            "label": "0-2",
+            "homeScore": 0,
+            "awayScore": 2,
+            "price": 31.94,
+            "probability": 0.028,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "4-0",
+            "score": "4-0",
+            "label": "4-0",
+            "homeScore": 4,
+            "awayScore": 0,
+            "price": 34.07,
+            "probability": 0.0262,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "4-1",
+            "score": "4-1",
+            "label": "4-1",
+            "homeScore": 4,
+            "awayScore": 1,
+            "price": 42.56,
+            "probability": 0.021,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-2",
+            "score": "3-2",
+            "label": "3-2",
+            "homeScore": 3,
+            "awayScore": 2,
+            "price": 43.56,
+            "probability": 0.0205,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-3",
+            "score": "1-3",
+            "label": "1-3",
+            "homeScore": 1,
+            "awayScore": 3,
+            "price": 73.05,
+            "probability": 0.0122,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-3",
+            "score": "2-3",
+            "label": "2-3",
+            "homeScore": 2,
+            "awayScore": 3,
+            "price": 89.16,
+            "probability": 0.01,
+            "bookmaker": "Model"
+          }
+        ]
+      }
     },
     {
       "id": "79",
@@ -99,7 +987,8 @@
       "venue": "Mexico City",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "80",
@@ -113,7 +1002,8 @@
       "venue": "Atlanta",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "81",
@@ -127,7 +1017,8 @@
       "venue": "San Francisco Bay Area (Santa Clara)",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "82",
@@ -141,7 +1032,8 @@
       "venue": "Seattle",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "83",
@@ -155,7 +1047,226 @@
       "venue": "Toronto",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": {
+        "source": "Model: Elo + Poisson + margin",
+        "modelVersion": "elo-poisson-margin-v1",
+        "generatedAt": "2026-06-27T06:52:28.433Z",
+        "inputs": {
+          "homeElo": 1600,
+          "awayElo": 1600,
+          "expectedGoalsHome": 1.207,
+          "expectedGoalsAway": 1.207,
+          "margins": {
+            "h2h": 0.06,
+            "spreads": 0.055,
+            "correct_score": 0.12
+          }
+        },
+        "h2h": [
+          {
+            "key": "home",
+            "label": "2K 勝",
+            "price": 2.6,
+            "probability": 0.3622,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "draw",
+            "label": "和局",
+            "price": 3.42,
+            "probability": 0.2757,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "away",
+            "label": "2L 勝",
+            "price": 2.6,
+            "probability": 0.3622,
+            "bookmaker": "Model"
+          }
+        ],
+        "spreads": [
+          {
+            "key": "home",
+            "label": "2K -0.5",
+            "point": -0.5,
+            "price": 2.62,
+            "probability": 0.3622,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "away",
+            "label": "2L +0.5",
+            "point": 0.5,
+            "price": 1.49,
+            "probability": 0.6378,
+            "bookmaker": "Model"
+          }
+        ],
+        "correct_score": [
+          {
+            "key": "1-1",
+            "score": "1-1",
+            "label": "1-1",
+            "homeScore": 1,
+            "awayScore": 1,
+            "price": 6.85,
+            "probability": 0.1303,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-1",
+            "score": "0-1",
+            "label": "0-1",
+            "homeScore": 0,
+            "awayScore": 1,
+            "price": 8.27,
+            "probability": 0.108,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-0",
+            "score": "1-0",
+            "label": "1-0",
+            "homeScore": 1,
+            "awayScore": 0,
+            "price": 8.27,
+            "probability": 0.108,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-0",
+            "score": "0-0",
+            "label": "0-0",
+            "homeScore": 0,
+            "awayScore": 0,
+            "price": 9.98,
+            "probability": 0.0895,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-2",
+            "score": "1-2",
+            "label": "1-2",
+            "homeScore": 1,
+            "awayScore": 2,
+            "price": 11.35,
+            "probability": 0.0787,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-1",
+            "score": "2-1",
+            "label": "2-1",
+            "homeScore": 2,
+            "awayScore": 1,
+            "price": 11.35,
+            "probability": 0.0787,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-2",
+            "score": "0-2",
+            "label": "0-2",
+            "homeScore": 0,
+            "awayScore": 2,
+            "price": 13.7,
+            "probability": 0.0652,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-0",
+            "score": "2-0",
+            "label": "2-0",
+            "homeScore": 2,
+            "awayScore": 0,
+            "price": 13.7,
+            "probability": 0.0652,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-2",
+            "score": "2-2",
+            "label": "2-2",
+            "homeScore": 2,
+            "awayScore": 2,
+            "price": 18.81,
+            "probability": 0.0475,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-3",
+            "score": "1-3",
+            "label": "1-3",
+            "homeScore": 1,
+            "awayScore": 3,
+            "price": 28.22,
+            "probability": 0.0316,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-1",
+            "score": "3-1",
+            "label": "3-1",
+            "homeScore": 3,
+            "awayScore": 1,
+            "price": 28.22,
+            "probability": 0.0316,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-3",
+            "score": "0-3",
+            "label": "0-3",
+            "homeScore": 0,
+            "awayScore": 3,
+            "price": 34.06,
+            "probability": 0.0262,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-0",
+            "score": "3-0",
+            "label": "3-0",
+            "homeScore": 3,
+            "awayScore": 0,
+            "price": 34.06,
+            "probability": 0.0262,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-3",
+            "score": "2-3",
+            "label": "2-3",
+            "homeScore": 2,
+            "awayScore": 3,
+            "price": 46.75,
+            "probability": 0.0191,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-2",
+            "score": "3-2",
+            "label": "3-2",
+            "homeScore": 3,
+            "awayScore": 2,
+            "price": 46.75,
+            "probability": 0.0191,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-4",
+            "score": "1-4",
+            "label": "1-4",
+            "homeScore": 1,
+            "awayScore": 4,
+            "price": 93.51,
+            "probability": 0.0095,
+            "bookmaker": "Model"
+          }
+        ]
+      }
     },
     {
       "id": "84",
@@ -169,7 +1280,226 @@
       "venue": "Los Angeles (Inglewood)",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": {
+        "source": "Model: Elo + Poisson + margin",
+        "modelVersion": "elo-poisson-margin-v1",
+        "generatedAt": "2026-06-27T06:52:28.433Z",
+        "inputs": {
+          "homeElo": 1600,
+          "awayElo": 1600,
+          "expectedGoalsHome": 1.207,
+          "expectedGoalsAway": 1.207,
+          "margins": {
+            "h2h": 0.06,
+            "spreads": 0.055,
+            "correct_score": 0.12
+          }
+        },
+        "h2h": [
+          {
+            "key": "home",
+            "label": "1H 勝",
+            "price": 2.6,
+            "probability": 0.3622,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "draw",
+            "label": "和局",
+            "price": 3.42,
+            "probability": 0.2757,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "away",
+            "label": "2J 勝",
+            "price": 2.6,
+            "probability": 0.3622,
+            "bookmaker": "Model"
+          }
+        ],
+        "spreads": [
+          {
+            "key": "home",
+            "label": "1H -0.5",
+            "point": -0.5,
+            "price": 2.62,
+            "probability": 0.3622,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "away",
+            "label": "2J +0.5",
+            "point": 0.5,
+            "price": 1.49,
+            "probability": 0.6378,
+            "bookmaker": "Model"
+          }
+        ],
+        "correct_score": [
+          {
+            "key": "1-1",
+            "score": "1-1",
+            "label": "1-1",
+            "homeScore": 1,
+            "awayScore": 1,
+            "price": 6.85,
+            "probability": 0.1303,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-1",
+            "score": "0-1",
+            "label": "0-1",
+            "homeScore": 0,
+            "awayScore": 1,
+            "price": 8.27,
+            "probability": 0.108,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-0",
+            "score": "1-0",
+            "label": "1-0",
+            "homeScore": 1,
+            "awayScore": 0,
+            "price": 8.27,
+            "probability": 0.108,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-0",
+            "score": "0-0",
+            "label": "0-0",
+            "homeScore": 0,
+            "awayScore": 0,
+            "price": 9.98,
+            "probability": 0.0895,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-2",
+            "score": "1-2",
+            "label": "1-2",
+            "homeScore": 1,
+            "awayScore": 2,
+            "price": 11.35,
+            "probability": 0.0787,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-1",
+            "score": "2-1",
+            "label": "2-1",
+            "homeScore": 2,
+            "awayScore": 1,
+            "price": 11.35,
+            "probability": 0.0787,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-2",
+            "score": "0-2",
+            "label": "0-2",
+            "homeScore": 0,
+            "awayScore": 2,
+            "price": 13.7,
+            "probability": 0.0652,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-0",
+            "score": "2-0",
+            "label": "2-0",
+            "homeScore": 2,
+            "awayScore": 0,
+            "price": 13.7,
+            "probability": 0.0652,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-2",
+            "score": "2-2",
+            "label": "2-2",
+            "homeScore": 2,
+            "awayScore": 2,
+            "price": 18.81,
+            "probability": 0.0475,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-3",
+            "score": "1-3",
+            "label": "1-3",
+            "homeScore": 1,
+            "awayScore": 3,
+            "price": 28.22,
+            "probability": 0.0316,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-1",
+            "score": "3-1",
+            "label": "3-1",
+            "homeScore": 3,
+            "awayScore": 1,
+            "price": 28.22,
+            "probability": 0.0316,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-3",
+            "score": "0-3",
+            "label": "0-3",
+            "homeScore": 0,
+            "awayScore": 3,
+            "price": 34.06,
+            "probability": 0.0262,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-0",
+            "score": "3-0",
+            "label": "3-0",
+            "homeScore": 3,
+            "awayScore": 0,
+            "price": 34.06,
+            "probability": 0.0262,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-3",
+            "score": "2-3",
+            "label": "2-3",
+            "homeScore": 2,
+            "awayScore": 3,
+            "price": 46.75,
+            "probability": 0.0191,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-2",
+            "score": "3-2",
+            "label": "3-2",
+            "homeScore": 3,
+            "awayScore": 2,
+            "price": 46.75,
+            "probability": 0.0191,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-4",
+            "score": "1-4",
+            "label": "1-4",
+            "homeScore": 1,
+            "awayScore": 4,
+            "price": 93.51,
+            "probability": 0.0095,
+            "bookmaker": "Model"
+          }
+        ]
+      }
     },
     {
       "id": "85",
@@ -183,7 +1513,8 @@
       "venue": "Vancouver",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "86",
@@ -197,7 +1528,226 @@
       "venue": "Miami (Miami Gardens)",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": {
+        "source": "Model: Elo + Poisson + margin",
+        "modelVersion": "elo-poisson-margin-v1",
+        "generatedAt": "2026-06-27T06:52:28.433Z",
+        "inputs": {
+          "homeElo": 1600,
+          "awayElo": 1600,
+          "expectedGoalsHome": 1.207,
+          "expectedGoalsAway": 1.207,
+          "margins": {
+            "h2h": 0.06,
+            "spreads": 0.055,
+            "correct_score": 0.12
+          }
+        },
+        "h2h": [
+          {
+            "key": "home",
+            "label": "1J 勝",
+            "price": 2.6,
+            "probability": 0.3622,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "draw",
+            "label": "和局",
+            "price": 3.42,
+            "probability": 0.2757,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "away",
+            "label": "2H 勝",
+            "price": 2.6,
+            "probability": 0.3622,
+            "bookmaker": "Model"
+          }
+        ],
+        "spreads": [
+          {
+            "key": "home",
+            "label": "1J -0.5",
+            "point": -0.5,
+            "price": 2.62,
+            "probability": 0.3622,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "away",
+            "label": "2H +0.5",
+            "point": 0.5,
+            "price": 1.49,
+            "probability": 0.6378,
+            "bookmaker": "Model"
+          }
+        ],
+        "correct_score": [
+          {
+            "key": "1-1",
+            "score": "1-1",
+            "label": "1-1",
+            "homeScore": 1,
+            "awayScore": 1,
+            "price": 6.85,
+            "probability": 0.1303,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-1",
+            "score": "0-1",
+            "label": "0-1",
+            "homeScore": 0,
+            "awayScore": 1,
+            "price": 8.27,
+            "probability": 0.108,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-0",
+            "score": "1-0",
+            "label": "1-0",
+            "homeScore": 1,
+            "awayScore": 0,
+            "price": 8.27,
+            "probability": 0.108,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-0",
+            "score": "0-0",
+            "label": "0-0",
+            "homeScore": 0,
+            "awayScore": 0,
+            "price": 9.98,
+            "probability": 0.0895,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-2",
+            "score": "1-2",
+            "label": "1-2",
+            "homeScore": 1,
+            "awayScore": 2,
+            "price": 11.35,
+            "probability": 0.0787,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-1",
+            "score": "2-1",
+            "label": "2-1",
+            "homeScore": 2,
+            "awayScore": 1,
+            "price": 11.35,
+            "probability": 0.0787,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-2",
+            "score": "0-2",
+            "label": "0-2",
+            "homeScore": 0,
+            "awayScore": 2,
+            "price": 13.7,
+            "probability": 0.0652,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-0",
+            "score": "2-0",
+            "label": "2-0",
+            "homeScore": 2,
+            "awayScore": 0,
+            "price": 13.7,
+            "probability": 0.0652,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-2",
+            "score": "2-2",
+            "label": "2-2",
+            "homeScore": 2,
+            "awayScore": 2,
+            "price": 18.81,
+            "probability": 0.0475,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-3",
+            "score": "1-3",
+            "label": "1-3",
+            "homeScore": 1,
+            "awayScore": 3,
+            "price": 28.22,
+            "probability": 0.0316,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-1",
+            "score": "3-1",
+            "label": "3-1",
+            "homeScore": 3,
+            "awayScore": 1,
+            "price": 28.22,
+            "probability": 0.0316,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-3",
+            "score": "0-3",
+            "label": "0-3",
+            "homeScore": 0,
+            "awayScore": 3,
+            "price": 34.06,
+            "probability": 0.0262,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-0",
+            "score": "3-0",
+            "label": "3-0",
+            "homeScore": 3,
+            "awayScore": 0,
+            "price": 34.06,
+            "probability": 0.0262,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-3",
+            "score": "2-3",
+            "label": "2-3",
+            "homeScore": 2,
+            "awayScore": 3,
+            "price": 46.75,
+            "probability": 0.0191,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-2",
+            "score": "3-2",
+            "label": "3-2",
+            "homeScore": 3,
+            "awayScore": 2,
+            "price": 46.75,
+            "probability": 0.0191,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-4",
+            "score": "1-4",
+            "label": "1-4",
+            "homeScore": 1,
+            "awayScore": 4,
+            "price": 93.51,
+            "probability": 0.0095,
+            "bookmaker": "Model"
+          }
+        ]
+      }
     },
     {
       "id": "87",
@@ -211,7 +1761,8 @@
       "venue": "Kansas City",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "88",
@@ -225,7 +1776,226 @@
       "venue": "Dallas (Arlington)",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": {
+        "source": "Model: Elo + Poisson + margin",
+        "modelVersion": "elo-poisson-margin-v1",
+        "generatedAt": "2026-06-27T06:52:28.433Z",
+        "inputs": {
+          "homeElo": 1715,
+          "awayElo": 1600,
+          "expectedGoalsHome": 1.566,
+          "expectedGoalsAway": 0.869,
+          "margins": {
+            "h2h": 0.06,
+            "spreads": 0.055,
+            "correct_score": 0.12
+          }
+        },
+        "h2h": [
+          {
+            "key": "home",
+            "label": "Australia 勝",
+            "price": 1.76,
+            "probability": 0.5372,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "draw",
+            "label": "和局",
+            "price": 3.71,
+            "probability": 0.2541,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "away",
+            "label": "2G 勝",
+            "price": 4.52,
+            "probability": 0.2086,
+            "bookmaker": "Model"
+          }
+        ],
+        "spreads": [
+          {
+            "key": "home",
+            "label": "Australia -0.5",
+            "point": -0.5,
+            "price": 1.76,
+            "probability": 0.5372,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "away",
+            "label": "2G +0.5",
+            "point": 0.5,
+            "price": 2.05,
+            "probability": 0.4628,
+            "bookmaker": "Model"
+          }
+        ],
+        "correct_score": [
+          {
+            "key": "1-0",
+            "score": "1-0",
+            "label": "1-0",
+            "homeScore": 1,
+            "awayScore": 0,
+            "price": 6.51,
+            "probability": 0.1372,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-1",
+            "score": "1-1",
+            "label": "1-1",
+            "homeScore": 1,
+            "awayScore": 1,
+            "price": 7.49,
+            "probability": 0.1192,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-0",
+            "score": "2-0",
+            "label": "2-0",
+            "homeScore": 2,
+            "awayScore": 0,
+            "price": 8.31,
+            "probability": 0.1074,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-1",
+            "score": "2-1",
+            "label": "2-1",
+            "homeScore": 2,
+            "awayScore": 1,
+            "price": 9.57,
+            "probability": 0.0933,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-0",
+            "score": "0-0",
+            "label": "0-0",
+            "homeScore": 0,
+            "awayScore": 0,
+            "price": 10.19,
+            "probability": 0.0876,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-1",
+            "score": "0-1",
+            "label": "0-1",
+            "homeScore": 0,
+            "awayScore": 1,
+            "price": 11.72,
+            "probability": 0.0762,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-0",
+            "score": "3-0",
+            "label": "3-0",
+            "homeScore": 3,
+            "awayScore": 0,
+            "price": 15.93,
+            "probability": 0.056,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-2",
+            "score": "1-2",
+            "label": "1-2",
+            "homeScore": 1,
+            "awayScore": 2,
+            "price": 17.23,
+            "probability": 0.0518,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-1",
+            "score": "3-1",
+            "label": "3-1",
+            "homeScore": 3,
+            "awayScore": 1,
+            "price": 18.33,
+            "probability": 0.0487,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-2",
+            "score": "2-2",
+            "label": "2-2",
+            "homeScore": 2,
+            "awayScore": 2,
+            "price": 22.01,
+            "probability": 0.0406,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "0-2",
+            "score": "0-2",
+            "label": "0-2",
+            "homeScore": 0,
+            "awayScore": 2,
+            "price": 26.97,
+            "probability": 0.0331,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "4-0",
+            "score": "4-0",
+            "label": "4-0",
+            "homeScore": 4,
+            "awayScore": 0,
+            "price": 40.71,
+            "probability": 0.0219,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "3-2",
+            "score": "3-2",
+            "label": "3-2",
+            "homeScore": 3,
+            "awayScore": 2,
+            "price": 42.18,
+            "probability": 0.0212,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "4-1",
+            "score": "4-1",
+            "label": "4-1",
+            "homeScore": 4,
+            "awayScore": 1,
+            "price": 46.84,
+            "probability": 0.0191,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "1-3",
+            "score": "1-3",
+            "label": "1-3",
+            "homeScore": 1,
+            "awayScore": 3,
+            "price": 59.47,
+            "probability": 0.015,
+            "bookmaker": "Model"
+          },
+          {
+            "key": "2-3",
+            "score": "2-3",
+            "label": "2-3",
+            "homeScore": 2,
+            "awayScore": 3,
+            "price": 75.98,
+            "probability": 0.0118,
+            "bookmaker": "Model"
+          }
+        ]
+      }
     },
     {
       "id": "89",
@@ -239,7 +2009,8 @@
       "venue": "Philadelphia",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "90",
@@ -253,7 +2024,8 @@
       "venue": "Houston",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "91",
@@ -267,7 +2039,8 @@
       "venue": "New York/New Jersey (East Rutherford)",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "92",
@@ -281,7 +2054,8 @@
       "venue": "Mexico City",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "93",
@@ -295,7 +2069,8 @@
       "venue": "Dallas (Arlington)",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "94",
@@ -309,7 +2084,8 @@
       "venue": "Seattle",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "95",
@@ -323,7 +2099,8 @@
       "venue": "Atlanta",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "96",
@@ -337,7 +2114,8 @@
       "venue": "Vancouver",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "97",
@@ -351,7 +2129,8 @@
       "venue": "Boston (Foxborough)",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "98",
@@ -365,7 +2144,8 @@
       "venue": "Los Angeles (Inglewood)",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "99",
@@ -379,7 +2159,8 @@
       "venue": "Miami (Miami Gardens)",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "100",
@@ -393,7 +2174,8 @@
       "venue": "Kansas City",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "101",
@@ -407,7 +2189,8 @@
       "venue": "Dallas (Arlington)",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "102",
@@ -421,7 +2204,8 @@
       "venue": "Atlanta",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "103",
@@ -435,7 +2219,8 @@
       "venue": "Miami (Miami Gardens)",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     },
     {
       "id": "104",
@@ -449,7 +2234,8 @@
       "venue": "New York/New Jersey (East Rutherford)",
       "score": null,
       "result": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "odds": null
     }
   ]
 }
