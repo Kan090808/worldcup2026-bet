@@ -4,7 +4,7 @@ const path = require('path');
 
 const SOURCE_URL = process.env.WC_SOURCE_URL || 'https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json';
 const OUT = path.join(process.cwd(), 'data', 'worldcup2026.json');
-const KO_ROUNDS = new Set(['Round of 32', 'Round of 16', 'Quarter-final', 'Semi-final', 'Match for third place', 'Final']);
+const KO_ROUNDS = new Set(['Round of 32', 'Round Of 32', 'Round of 16', 'Round Of 16', 'Quarter-final', 'Quarter Final', 'Semi-final', 'Semi Final', 'Match for third place', 'Final']);
 
 function parseUTC(date, time) {
   if (!date || !time) return null;
@@ -22,15 +22,15 @@ function normalizeMatch(m) {
   const score = Array.isArray(ft) ? { home: Number(ft[0]), away: Number(ft[1]) } : null;
   const result = score ? (score.home > score.away ? 'home' : score.home < score.away ? 'away' : 'draw') : null;
   return {
-    id: String(m.num || `${m.date}-${m.team1}-${m.team2}`),
-    num: m.num || null,
-    round: m.round || '',
+    id: String(m.id || m.num || `${m.date}-${m.team1}-${m.team2}`),
+    num: m.num || m.match_number || null,
+    round: m.round || m.stage || '',
     date: m.date || '',
     time: m.time || '',
-    kickoffUTC: parseUTC(m.date, m.time),
-    team1: m.team1 || '',
-    team2: m.team2 || '',
-    venue: m.ground || '',
+    kickoffUTC: m.kickoffUTC || parseUTC(m.date, m.time),
+    team1: m.team1 || m.home_team || m.home || '',
+    team2: m.team2 || m.away_team || m.away || '',
+    venue: m.ground || m.venue || '',
     score,
     result,
     status: score ? 'finished' : 'scheduled'
@@ -43,7 +43,13 @@ async function main() {
 
   const source = await res.json();
   const rawMatches = Array.isArray(source.matches) ? source.matches : [];
-  const matches = rawMatches.filter(m => KO_ROUNDS.has(m.round)).map(normalizeMatch);
+  const normalized = rawMatches.map(normalizeMatch);
+  const knockout = normalized.filter(m => KO_ROUNDS.has(m.round));
+  const matches = knockout.length ? knockout : normalized;
+
+  if (!matches.length) {
+    throw new Error('Fetched JSON has no usable matches; keep existing data/worldcup2026.json unchanged.');
+  }
 
   const payload = {
     sourceUrl: SOURCE_URL,
