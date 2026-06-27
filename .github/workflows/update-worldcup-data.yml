@@ -1,6 +1,12 @@
 name: Update World Cup data
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/update-worldcup-data.yml'
+      - 'scripts/fetch-worldcup.js'
   schedule:
     - cron: '*/5 * * * *'
   workflow_dispatch:
