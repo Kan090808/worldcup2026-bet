@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
+const assert = require('assert/strict');
+const { fileURLToPath } = require('url');
 
 const MATCH_SOURCE_URL = process.env.WC_SOURCE_URL || 'https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json';
+const PUBLIC_SOURCE_URL = process.env.WC_PUBLIC_SOURCE_URL || MATCH_SOURCE_URL;
 const OUT = path.join(process.cwd(), 'data', 'worldcup2026.json');
-const KO_ROUNDS = new Set(['Round of 32', 'Round Of 32', 'Round of 16', 'Round Of 16', 'Quarter-final', 'Quarter Final', 'Semi-final', 'Semi Final', 'Match for third place', 'Final']);
 
 const TEAM_ELO = {
   France: 2065, Brazil: 2045, Spain: 2035, Argentina: 2025, England: 1995,
@@ -24,6 +26,10 @@ const MODEL_VERSION = 'elo-poisson-margin-v1';
 const H2H_MARGIN = 0.06;
 const SPREAD_MARGIN = 0.055;
 const CORRECT_SCORE_MARGIN = 0.12;
+const CHAMPION_MARGIN = 0.12;
+const THIRD_PLACE_ASSIGNMENTS = {
+  'B,D,E,F,I,J,K,L': { 74: 'D', 77: 'F', 79: 'E', 80: 'K', 81: 'B', 82: 'J', 85: 'I', 87: 'L' }
+};
 
 function parseUTC(date, time) {
   if (!date || !time) return null;
@@ -44,6 +50,7 @@ function normalizeMatch(m) {
     id: String(m.id || m.num || `${m.date}-${m.team1}-${m.team2}`),
     num: m.num || m.match_number || null,
     round: m.round || m.stage || '',
+    group: m.group || '',
     date: m.date || '',
     time: m.time || '',
     kickoffUTC: m.kickoffUTC || parseUTC(m.date, m.time),
@@ -58,7 +65,8 @@ function normalizeMatch(m) {
 }
 
 function isTbd(name) {
-  return !name || /^TBD/i.test(name) || /^[WL]\d+/.test(name) || String(name).includes('/');
+  const value = String(name || '');
+  return !value || /^TBD/i.test(value) || /^[WL]\d+/.test(value) || /^[1-3][A-L]$/.test(value) || value.includes('/');
 }
 
 function clamp(v, min, max) {
@@ -152,8 +160,113 @@ function modelOdds(match) {
   };
 }
 
+function tableRows(matches) {
+  const rows = new Map();
+  const row = team => {
+    if (!rows.has(team)) rows.set(team, { team, played: 0, points: 0, gd: 0, gf: 0 });
+    return rows.get(team);
+  };
+  for (const m of matches) {
+    if (!m.group || !m.score || isTbd(m.team1) || isTbd(m.team2)) continue;
+    const a = row(m.team1);
+    const b = row(m.team2);
+    const hs = Number(m.score.home);
+    const as = Number(m.score.away);
+    a.played++;
+    b.played++;
+    a.gf += hs;
+    b.gf += as;
+    a.gd += hs - as;
+    b.gd += as - hs;
+    if (hs > as) a.points += 3;
+    else if (hs < as) b.points += 3;
+    else {
+      a.points++;
+      b.points++;
+    }
+  }
+  return [...rows.values()].sort((a, b) => b.points - a.points || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team));
+}
+
+function groupQualifiers(matches) {
+  const byGroup = new Map();
+  for (const m of matches) {
+    if (!m.group) continue;
+    if (!byGroup.has(m.group)) byGroup.set(m.group, []);
+    byGroup.get(m.group).push(m);
+  }
+  const topTwo = [];
+  const thirds = [];
+  for (const groupMatches of byGroup.values()) {
+    const rows = tableRows(groupMatches);
+    topTwo.push(...rows.slice(0, 2).map(r => r.team));
+    if (rows[2]) thirds.push(rows[2]);
+  }
+  thirds.sort((a, b) => b.points - a.points || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team));
+  return [...new Set([...topTwo, ...thirds.slice(0, 8).map(r => r.team)])];
+}
+
+function groupTables(matches) {
+  const tables = {};
+  for (const letter of 'ABCDEFGHIJKL') tables[letter] = tableRows(matches.filter(m => m.group === `Group ${letter}`));
+  return tables;
+}
+
+function fillRoundOf32(matches) {
+  const tables = groupTables(matches);
+  const thirds = Object.entries(tables)
+    .map(([group, rows]) => ({ group, ...rows[2] }))
+    .filter(x => x.team)
+    .sort((a, b) => b.points - a.points || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team))
+    .slice(0, 8);
+  const thirdGroups = thirds.map(x => x.group).sort().join(',');
+  const thirdAssignments = THIRD_PLACE_ASSIGNMENTS[thirdGroups];
+  if (!thirdAssignments) return;
+  const thirdTeams = Object.fromEntries(thirds.map(x => [x.group, x.team]));
+  const slotTeam = slot => {
+    const m = String(slot).match(/^([12])([A-L])$/);
+    if (m) return tables[m[2]]?.[Number(m[1]) - 1]?.team;
+    return null;
+  };
+  for (const match of matches) {
+    if (match.round !== 'Round of 32') continue;
+    if (isTbd(match.team1)) match.team1 = slotTeam(match.team1) || match.team1;
+    if (isTbd(match.team2)) match.team2 = slotTeam(match.team2) || thirdTeams[thirdAssignments[match.num]] || match.team2;
+  }
+}
+
+function championOdds(matches) {
+  const qualified = groupQualifiers(matches);
+  const fallback = [...new Set(matches.flatMap(m => [m.team1, m.team2]).filter(t => !isTbd(t)))];
+  let alive = new Set(qualified.length ? qualified : fallback);
+  for (const m of matches) {
+    if (!m.score || !m.round || m.group || isTbd(m.team1) || isTbd(m.team2)) continue;
+    const hs = Number(m.score.home);
+    const as = Number(m.score.away);
+    if (hs === as) continue;
+    alive.delete(hs > as ? m.team2 : m.team1);
+  }
+  const teams = [...alive];
+  const weights = teams.map(team => ({ team, weight: Math.pow(10, ((TEAM_ELO[team] || DEFAULT_ELO) - DEFAULT_ELO) / 400) }));
+  const total = weights.reduce((sum, x) => sum + x.weight, 0) || 1;
+  return weights.map(x => {
+    const probability = x.weight / total;
+    return {
+      team: x.team,
+      price: decimalOdd(probability, CHAMPION_MARGIN),
+      probability: Number(probability.toFixed(4)),
+      bookmaker: 'Model'
+    };
+  }).sort((a, b) => a.price - b.price || a.team.localeCompare(b.team));
+}
+
 async function fetchMatches() {
   try {
+    if (!/^https?:\/\//.test(MATCH_SOURCE_URL)) {
+      const file = MATCH_SOURCE_URL.startsWith('file:') ? fileURLToPath(MATCH_SOURCE_URL) : MATCH_SOURCE_URL;
+      const source = JSON.parse(fs.readFileSync(file, 'utf8'));
+      return { source: PUBLIC_SOURCE_URL, rawMatches: Array.isArray(source.matches) ? source.matches : [] };
+    }
     const res = await fetch(MATCH_SOURCE_URL, { headers: { 'user-agent': 'worldcup2026-bet-fetcher' } });
     if (!res.ok) throw new Error(`Match fetch failed: ${res.status} ${res.statusText}`);
     const source = await res.json();
@@ -174,9 +287,9 @@ async function fetchMatches() {
 async function main() {
   const { source, rawMatches } = await fetchMatches();
   const normalized = rawMatches.map(normalizeMatch);
-  const knockout = normalized.filter(m => KO_ROUNDS.has(m.round));
-  const matches = knockout.length ? knockout : normalized;
+  const matches = normalized;
   if (!matches.length) throw new Error('Fetched JSON has no usable matches; keep existing data/worldcup2026.json unchanged.');
+  fillRoundOf32(matches);
   for (const match of matches) match.odds = modelOdds(match);
   const payload = {
     sourceUrl: source,
@@ -188,6 +301,7 @@ async function main() {
     },
     fetchedAt: new Date().toISOString(),
     matchCount: matches.length,
+    championOdds: championOdds(matches),
     matches
   };
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
@@ -195,7 +309,24 @@ async function main() {
   console.log(`Wrote ${matches.length} matches to ${OUT}`);
 }
 
-main().catch(err => {
-  console.error(err);
-  process.exit(1);
-});
+function selfCheck() {
+  assert.ok(isTbd('1I'));
+  assert.ok(isTbd('2K'));
+  assert.ok(isTbd('3A/B/C/D/F'));
+  assert.ok(isTbd('W74'));
+  assert.ok(!isTbd('Canada'));
+  assert.equal(normalizeMatch({ group: 'Group A' }).group, 'Group A');
+  assert.ok(championOdds([
+    normalizeMatch({ group: 'Group A', team1: 'Mexico', team2: 'Canada', score: { home: 1, away: 0 } }),
+    normalizeMatch({ group: 'Group A', team1: 'South Africa', team2: 'Canada', score: { home: 1, away: 1 } })
+  ]).some(x => x.team === 'Mexico'));
+}
+
+if (process.argv.includes('--check')) {
+  selfCheck();
+} else {
+  main().catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+}
