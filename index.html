@@ -9,7 +9,7 @@
   </style>
 </head>
 <body>
-<header><div class="top"><div><div class="brand">⚽ 2026 世界盃虛擬下注</div><div class="sub">GitHub Pages 靜態頁 · Actions 更新 JSON · 模型賠率：Elo + Poisson + margin</div></div><div class="wallet"><div class="money"><small>虛擬餘額</small><b id="balance">NT$10,000</b></div><button class="btn" onclick="resetAll()">重設</button></div></div></header>
+<header><div class="top"><div><div class="brand">⚽ 2026 世界盃虛擬下注</div><div class="sub">GitHub Pages 靜態頁 · Actions 更新 JSON · 模型賠率：Elo + Poisson + margin</div></div><div class="wallet"><div class="money"><small>虛擬餘額</small><b id="balance">NT$10,000</b></div></div></div></header>
 <main class="wrap">
   <div id="dataStatus" class="status warn">讀取 data/worldcup2026.json 中…</div>
   <div class="grid"><div class="stat"><b id="sBalance">NT$10,000</b><span>目前餘額</span></div><div class="stat"><b id="sBets">0</b><span>下注筆數</span></div><div class="stat"><b id="sPending">0</b><span>待結算</span></div><div class="stat"><b id="sProfit">+NT$0</b><span>已結算盈虧</span></div></div>
@@ -64,7 +64,6 @@ function openEditChampionBet(id){const b=bets.find(x=>x.id===id);if(!canEditBet(
 function cancelChampionEdit(){editingChampionBet=null;renderChampion()}
 function renderHistory(){const root=document.getElementById('historyRoot');if(!bets.length){root.innerHTML='<div class="empty">尚無下注記錄</div>';return}root.innerHTML='<table class="history"><thead><tr><th>賽事</th><th>玩法</th><th>選項</th><th>金額</th><th>賠率</th><th>狀態</th><th>操作</th></tr></thead><tbody>'+bets.map(b=>'<tr><td>'+(b.market==='champion'?'2026 世界盃冠軍':b.matchLabel)+(b.finalScore?' <small>('+b.finalScore+')</small>':'')+'</td><td>'+({h2h:'勝平負',spreads:'讓球',correct_score:'正確比分',champion:'猜冠軍'}[b.market]||b.market)+'</td><td>'+b.pickLabel+'</td><td>'+fmt(b.amount)+'</td><td>×'+b.odd+'</td><td>'+({pending:'待結算',win:'✅ 勝',loss:'❌ 負'}[b.status]||b.status)+'</td><td>'+(canEditBet(b)?'<button class="btn" onclick="'+(b.market==='champion'?'openEditChampionBet':'openEditBet')+'(&quot;'+b.id+'&quot;)">修改</button> <button class="btn" onclick="deleteBet(&quot;'+b.id+'&quot;)">刪除</button>':'已鎖定')+'</td></tr>').join('')+'</tbody></table>'}
 function showTab(t){if(t!=='history'&&t!=='champion')matchFilter=t;document.getElementById('matchesView').classList.toggle('hide',t==='history'||t==='champion');document.getElementById('championView').classList.toggle('hide',t!=='champion');document.getElementById('historyView').classList.toggle('hide',t!=='history');document.getElementById('tabUnfinished').classList.toggle('active',t==='unfinished');document.getElementById('tabFinished').classList.toggle('active',t==='finished');document.getElementById('tabChampion').classList.toggle('active',t==='champion');document.getElementById('tabHistory').classList.toggle('active',t==='history');renderMatches();renderChampion()}
-function resetAll(){if(!confirm('清除下注記錄並重設餘額？'))return;balance=10000;bets=[];save();render()}
 loadData();setInterval(loadData,5*60*1000);
 </script>
 </body>
