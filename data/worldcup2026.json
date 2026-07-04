@@ -10,127 +10,121 @@
     ],
     "note": "Virtual model odds only. These are not bookmaker odds."
   },
-  "fetchedAt": "2026-07-04T18:44:24.013Z",
+  "fetchedAt": "2026-07-04T19:16:20.043Z",
   "matchCount": 104,
   "championOdds": [
     {
       "team": "France",
-      "price": 7.52,
-      "probability": 0.1187,
+      "price": 7.44,
+      "probability": 0.1201,
       "bookmaker": "Model"
     },
     {
       "team": "Brazil",
-      "price": 8.44,
-      "probability": 0.1058,
+      "price": 8.34,
+      "probability": 0.107,
       "bookmaker": "Model"
     },
     {
       "team": "Spain",
-      "price": 8.94,
-      "probability": 0.0999,
+      "price": 8.84,
+      "probability": 0.101,
       "bookmaker": "Model"
     },
     {
       "team": "Argentina",
-      "price": 9.47,
-      "probability": 0.0943,
+      "price": 9.36,
+      "probability": 0.0954,
       "bookmaker": "Model"
     },
     {
       "team": "England",
-      "price": 11.25,
-      "probability": 0.0793,
+      "price": 11.13,
+      "probability": 0.0802,
       "bookmaker": "Model"
     },
     {
       "team": "Portugal",
-      "price": 12.63,
-      "probability": 0.0707,
+      "price": 12.49,
+      "probability": 0.0715,
       "bookmaker": "Model"
     },
     {
       "team": "Netherlands",
-      "price": 14.17,
-      "probability": 0.063,
+      "price": 14.01,
+      "probability": 0.0637,
       "bookmaker": "Model"
     },
     {
       "team": "Germany",
-      "price": 15.9,
-      "probability": 0.0562,
+      "price": 15.72,
+      "probability": 0.0568,
       "bookmaker": "Model"
     },
     {
       "team": "Colombia",
-      "price": 18.89,
-      "probability": 0.0473,
+      "price": 18.68,
+      "probability": 0.0478,
       "bookmaker": "Model"
     },
     {
       "team": "Belgium",
-      "price": 22.45,
-      "probability": 0.0398,
+      "price": 22.2,
+      "probability": 0.0402,
       "bookmaker": "Model"
     },
     {
       "team": "Switzerland",
-      "price": 26.69,
-      "probability": 0.0335,
+      "price": 26.39,
+      "probability": 0.0338,
       "bookmaker": "Model"
     },
     {
       "team": "Morocco",
-      "price": 27.47,
-      "probability": 0.0325,
+      "price": 27.16,
+      "probability": 0.0329,
       "bookmaker": "Model"
     },
     {
       "team": "USA",
-      "price": 31.72,
-      "probability": 0.0281,
+      "price": 31.36,
+      "probability": 0.0285,
       "bookmaker": "Model"
     },
     {
       "team": "Mexico",
-      "price": 33.6,
-      "probability": 0.0266,
+      "price": 33.22,
+      "probability": 0.0269,
       "bookmaker": "Model"
     },
     {
       "team": "Senegal",
-      "price": 38.8,
-      "probability": 0.023,
+      "price": 38.36,
+      "probability": 0.0233,
       "bookmaker": "Model"
     },
     {
       "team": "Norway",
-      "price": 39.93,
-      "probability": 0.0224,
+      "price": 39.48,
+      "probability": 0.0226,
       "bookmaker": "Model"
     },
     {
       "team": "Australia",
-      "price": 56.4,
-      "probability": 0.0158,
+      "price": 55.77,
+      "probability": 0.016,
       "bookmaker": "Model"
     },
     {
       "team": "Egypt",
-      "price": 59.75,
-      "probability": 0.0149,
+      "price": 59.08,
+      "probability": 0.0151,
       "bookmaker": "Model"
     },
     {
       "team": "Paraguay",
-      "price": 68.99,
-      "probability": 0.0129,
-      "bookmaker": "Model"
-    },
-    {
-      "team": "Canada",
-      "price": 79.67,
-      "probability": 0.0112,
+      "price": 68.22,
+      "probability": 0.0131,
       "bookmaker": "Model"
     },
     {
@@ -161,7 +155,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.001Z",
+        "generatedAt": "2026-07-04T19:16:20.034Z",
         "inputs": {
           "homeElo": 1805,
           "awayElo": 1605,
@@ -398,7 +392,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.001Z",
+        "generatedAt": "2026-07-04T19:16:20.035Z",
         "inputs": {
           "homeElo": 1650,
           "awayElo": 1640,
@@ -635,7 +629,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.002Z",
+        "generatedAt": "2026-07-04T19:16:20.035Z",
         "inputs": {
           "homeElo": 1640,
           "awayElo": 1605,
@@ -872,7 +866,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.002Z",
+        "generatedAt": "2026-07-04T19:16:20.035Z",
         "inputs": {
           "homeElo": 1805,
           "awayElo": 1650,
@@ -1109,7 +1103,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.002Z",
+        "generatedAt": "2026-07-04T19:16:20.035Z",
         "inputs": {
           "homeElo": 1640,
           "awayElo": 1805,
@@ -1346,7 +1340,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.002Z",
+        "generatedAt": "2026-07-04T19:16:20.035Z",
         "inputs": {
           "homeElo": 1605,
           "awayElo": 1650,
@@ -1583,7 +1577,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.002Z",
+        "generatedAt": "2026-07-04T19:16:20.035Z",
         "inputs": {
           "homeElo": 1655,
           "awayElo": 1560,
@@ -1820,7 +1814,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.002Z",
+        "generatedAt": "2026-07-04T19:16:20.035Z",
         "inputs": {
           "homeElo": 1585,
           "awayElo": 1845,
@@ -2057,7 +2051,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.002Z",
+        "generatedAt": "2026-07-04T19:16:20.036Z",
         "inputs": {
           "homeElo": 1845,
           "awayElo": 1560,
@@ -2294,7 +2288,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.003Z",
+        "generatedAt": "2026-07-04T19:16:20.036Z",
         "inputs": {
           "homeElo": 1655,
           "awayElo": 1585,
@@ -2531,7 +2525,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.003Z",
+        "generatedAt": "2026-07-04T19:16:20.036Z",
         "inputs": {
           "homeElo": 1845,
           "awayElo": 1655,
@@ -2768,7 +2762,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.003Z",
+        "generatedAt": "2026-07-04T19:16:20.036Z",
         "inputs": {
           "homeElo": 1560,
           "awayElo": 1585,
@@ -3005,7 +2999,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.003Z",
+        "generatedAt": "2026-07-04T19:16:20.036Z",
         "inputs": {
           "homeElo": 2045,
           "awayElo": 1840,
@@ -3242,7 +3236,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.004Z",
+        "generatedAt": "2026-07-04T19:16:20.036Z",
         "inputs": {
           "homeElo": 1485,
           "awayElo": 1645,
@@ -3479,7 +3473,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.004Z",
+        "generatedAt": "2026-07-04T19:16:20.036Z",
         "inputs": {
           "homeElo": 1645,
           "awayElo": 1840,
@@ -3716,7 +3710,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.004Z",
+        "generatedAt": "2026-07-04T19:16:20.036Z",
         "inputs": {
           "homeElo": 2045,
           "awayElo": 1485,
@@ -3953,7 +3947,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.004Z",
+        "generatedAt": "2026-07-04T19:16:20.036Z",
         "inputs": {
           "homeElo": 1645,
           "awayElo": 2045,
@@ -4190,7 +4184,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.004Z",
+        "generatedAt": "2026-07-04T19:16:20.037Z",
         "inputs": {
           "homeElo": 1840,
           "awayElo": 1485,
@@ -4427,7 +4421,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.004Z",
+        "generatedAt": "2026-07-04T19:16:20.037Z",
         "inputs": {
           "homeElo": 1815,
           "awayElo": 1680,
@@ -4664,7 +4658,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.004Z",
+        "generatedAt": "2026-07-04T19:16:20.037Z",
         "inputs": {
           "homeElo": 1715,
           "awayElo": 1675,
@@ -4901,7 +4895,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.004Z",
+        "generatedAt": "2026-07-04T19:16:20.037Z",
         "inputs": {
           "homeElo": 1815,
           "awayElo": 1715,
@@ -5138,7 +5132,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.004Z",
+        "generatedAt": "2026-07-04T19:16:20.037Z",
         "inputs": {
           "homeElo": 1675,
           "awayElo": 1680,
@@ -5375,7 +5369,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.005Z",
+        "generatedAt": "2026-07-04T19:16:20.037Z",
         "inputs": {
           "homeElo": 1675,
           "awayElo": 1815,
@@ -5612,7 +5606,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.005Z",
+        "generatedAt": "2026-07-04T19:16:20.037Z",
         "inputs": {
           "homeElo": 1680,
           "awayElo": 1715,
@@ -5849,7 +5843,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.005Z",
+        "generatedAt": "2026-07-04T19:16:20.037Z",
         "inputs": {
           "homeElo": 1935,
           "awayElo": 1465,
@@ -6086,7 +6080,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.005Z",
+        "generatedAt": "2026-07-04T19:16:20.037Z",
         "inputs": {
           "homeElo": 1740,
           "awayElo": 1770,
@@ -6323,7 +6317,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.005Z",
+        "generatedAt": "2026-07-04T19:16:20.038Z",
         "inputs": {
           "homeElo": 1935,
           "awayElo": 1740,
@@ -6560,7 +6554,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.005Z",
+        "generatedAt": "2026-07-04T19:16:20.038Z",
         "inputs": {
           "homeElo": 1770,
           "awayElo": 1465,
@@ -6797,7 +6791,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.005Z",
+        "generatedAt": "2026-07-04T19:16:20.038Z",
         "inputs": {
           "homeElo": 1465,
           "awayElo": 1740,
@@ -7034,7 +7028,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.005Z",
+        "generatedAt": "2026-07-04T19:16:20.038Z",
         "inputs": {
           "homeElo": 1770,
           "awayElo": 1935,
@@ -7271,7 +7265,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.006Z",
+        "generatedAt": "2026-07-04T19:16:20.038Z",
         "inputs": {
           "homeElo": 1955,
           "awayElo": 1790,
@@ -7508,7 +7502,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.006Z",
+        "generatedAt": "2026-07-04T19:16:20.038Z",
         "inputs": {
           "homeElo": 1760,
           "awayElo": 1635,
@@ -7745,7 +7739,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.006Z",
+        "generatedAt": "2026-07-04T19:16:20.038Z",
         "inputs": {
           "homeElo": 1955,
           "awayElo": 1760,
@@ -7982,7 +7976,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.006Z",
+        "generatedAt": "2026-07-04T19:16:20.038Z",
         "inputs": {
           "homeElo": 1635,
           "awayElo": 1790,
@@ -8219,7 +8213,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.006Z",
+        "generatedAt": "2026-07-04T19:16:20.038Z",
         "inputs": {
           "homeElo": 1790,
           "awayElo": 1760,
@@ -8456,7 +8450,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.006Z",
+        "generatedAt": "2026-07-04T19:16:20.038Z",
         "inputs": {
           "homeElo": 1635,
           "awayElo": 1955,
@@ -8693,7 +8687,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.006Z",
+        "generatedAt": "2026-07-04T19:16:20.038Z",
         "inputs": {
           "homeElo": 1875,
           "awayElo": 1705,
@@ -8930,7 +8924,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.006Z",
+        "generatedAt": "2026-07-04T19:16:20.038Z",
         "inputs": {
           "homeElo": 1695,
           "awayElo": 1530,
@@ -9167,7 +9161,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.006Z",
+        "generatedAt": "2026-07-04T19:16:20.038Z",
         "inputs": {
           "homeElo": 1875,
           "awayElo": 1695,
@@ -9404,7 +9398,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.007Z",
+        "generatedAt": "2026-07-04T19:16:20.038Z",
         "inputs": {
           "homeElo": 1530,
           "awayElo": 1705,
@@ -9641,7 +9635,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.007Z",
+        "generatedAt": "2026-07-04T19:16:20.038Z",
         "inputs": {
           "homeElo": 1705,
           "awayElo": 1695,
@@ -9878,7 +9872,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.007Z",
+        "generatedAt": "2026-07-04T19:16:20.039Z",
         "inputs": {
           "homeElo": 1530,
           "awayElo": 1875,
@@ -10115,7 +10109,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.007Z",
+        "generatedAt": "2026-07-04T19:16:20.039Z",
         "inputs": {
           "homeElo": 2035,
           "awayElo": 1480,
@@ -10352,7 +10346,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.007Z",
+        "generatedAt": "2026-07-04T19:16:20.039Z",
         "inputs": {
           "homeElo": 1580,
           "awayElo": 1885,
@@ -10589,7 +10583,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.007Z",
+        "generatedAt": "2026-07-04T19:16:20.039Z",
         "inputs": {
           "homeElo": 2035,
           "awayElo": 1580,
@@ -10826,7 +10820,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.008Z",
+        "generatedAt": "2026-07-04T19:16:20.039Z",
         "inputs": {
           "homeElo": 1885,
           "awayElo": 1480,
@@ -11063,7 +11057,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.008Z",
+        "generatedAt": "2026-07-04T19:16:20.039Z",
         "inputs": {
           "homeElo": 1480,
           "awayElo": 1580,
@@ -11300,7 +11294,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.008Z",
+        "generatedAt": "2026-07-04T19:16:20.039Z",
         "inputs": {
           "homeElo": 1885,
           "awayElo": 2035,
@@ -11537,7 +11531,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.008Z",
+        "generatedAt": "2026-07-04T19:16:20.039Z",
         "inputs": {
           "homeElo": 2065,
           "awayElo": 1780,
@@ -11774,7 +11768,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.008Z",
+        "generatedAt": "2026-07-04T19:16:20.040Z",
         "inputs": {
           "homeElo": 1515,
           "awayElo": 1775,
@@ -12011,7 +12005,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.008Z",
+        "generatedAt": "2026-07-04T19:16:20.040Z",
         "inputs": {
           "homeElo": 2065,
           "awayElo": 1515,
@@ -12248,7 +12242,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.008Z",
+        "generatedAt": "2026-07-04T19:16:20.040Z",
         "inputs": {
           "homeElo": 1775,
           "awayElo": 1780,
@@ -12485,7 +12479,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.008Z",
+        "generatedAt": "2026-07-04T19:16:20.040Z",
         "inputs": {
           "homeElo": 1775,
           "awayElo": 2065,
@@ -12722,7 +12716,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.009Z",
+        "generatedAt": "2026-07-04T19:16:20.040Z",
         "inputs": {
           "homeElo": 1780,
           "awayElo": 1515,
@@ -12959,7 +12953,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.009Z",
+        "generatedAt": "2026-07-04T19:16:20.040Z",
         "inputs": {
           "homeElo": 2025,
           "awayElo": 1685,
@@ -13196,7 +13190,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.009Z",
+        "generatedAt": "2026-07-04T19:16:20.040Z",
         "inputs": {
           "homeElo": 1765,
           "awayElo": 1505,
@@ -13433,7 +13427,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.009Z",
+        "generatedAt": "2026-07-04T19:16:20.040Z",
         "inputs": {
           "homeElo": 2025,
           "awayElo": 1765,
@@ -13670,7 +13664,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.009Z",
+        "generatedAt": "2026-07-04T19:16:20.040Z",
         "inputs": {
           "homeElo": 1505,
           "awayElo": 1685,
@@ -13907,7 +13901,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.009Z",
+        "generatedAt": "2026-07-04T19:16:20.040Z",
         "inputs": {
           "homeElo": 1685,
           "awayElo": 1765,
@@ -14144,7 +14138,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.009Z",
+        "generatedAt": "2026-07-04T19:16:20.041Z",
         "inputs": {
           "homeElo": 1505,
           "awayElo": 2025,
@@ -14381,7 +14375,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.010Z",
+        "generatedAt": "2026-07-04T19:16:20.041Z",
         "inputs": {
           "homeElo": 1975,
           "awayElo": 1555,
@@ -14618,7 +14612,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.010Z",
+        "generatedAt": "2026-07-04T19:16:20.041Z",
         "inputs": {
           "homeElo": 1545,
           "awayElo": 1905,
@@ -14855,7 +14849,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.011Z",
+        "generatedAt": "2026-07-04T19:16:20.041Z",
         "inputs": {
           "homeElo": 1975,
           "awayElo": 1545,
@@ -15092,7 +15086,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.011Z",
+        "generatedAt": "2026-07-04T19:16:20.041Z",
         "inputs": {
           "homeElo": 1905,
           "awayElo": 1555,
@@ -15329,7 +15323,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.011Z",
+        "generatedAt": "2026-07-04T19:16:20.041Z",
         "inputs": {
           "homeElo": 1905,
           "awayElo": 1975,
@@ -15566,7 +15560,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.011Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 1555,
           "awayElo": 1545,
@@ -15803,7 +15797,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.011Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 1995,
           "awayElo": 1890,
@@ -16040,7 +16034,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.011Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 1660,
           "awayElo": 1565,
@@ -16277,7 +16271,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.011Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 1995,
           "awayElo": 1660,
@@ -16514,7 +16508,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.011Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 1565,
           "awayElo": 1890,
@@ -16751,7 +16745,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.011Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 1565,
           "awayElo": 1995,
@@ -16988,7 +16982,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.011Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 1890,
           "awayElo": 1660,
@@ -17225,7 +17219,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.012Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 1605,
           "awayElo": 1655,
@@ -17462,7 +17456,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.012Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 1935,
           "awayElo": 1680,
@@ -17699,7 +17693,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.012Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 1955,
           "awayElo": 1840,
@@ -17936,7 +17930,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.012Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 2045,
           "awayElo": 1790,
@@ -18173,7 +18167,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.012Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 2065,
           "awayElo": 1760,
@@ -18410,7 +18404,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.012Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 1740,
           "awayElo": 1775,
@@ -18647,7 +18641,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.012Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 1805,
           "awayElo": 1770,
@@ -18884,7 +18878,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.012Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 1995,
           "awayElo": 1555,
@@ -19121,7 +19115,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.012Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 1815,
           "awayElo": 1560,
@@ -19358,7 +19352,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.012Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 1875,
           "awayElo": 1780,
@@ -19595,7 +19589,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.012Z",
+        "generatedAt": "2026-07-04T19:16:20.042Z",
         "inputs": {
           "homeElo": 1975,
           "awayElo": 1890,
@@ -19832,7 +19826,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.012Z",
+        "generatedAt": "2026-07-04T19:16:20.043Z",
         "inputs": {
           "homeElo": 2035,
           "awayElo": 1765,
@@ -20069,7 +20063,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.012Z",
+        "generatedAt": "2026-07-04T19:16:20.043Z",
         "inputs": {
           "homeElo": 1845,
           "awayElo": 1685,
@@ -20306,7 +20300,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.012Z",
+        "generatedAt": "2026-07-04T19:16:20.043Z",
         "inputs": {
           "homeElo": 2025,
           "awayElo": 1480,
@@ -20543,7 +20537,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.012Z",
+        "generatedAt": "2026-07-04T19:16:20.043Z",
         "inputs": {
           "homeElo": 1905,
           "awayElo": 1660,
@@ -20780,7 +20774,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.012Z",
+        "generatedAt": "2026-07-04T19:16:20.043Z",
         "inputs": {
           "homeElo": 1715,
           "awayElo": 1705,
@@ -21014,7 +21008,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.012Z",
+        "generatedAt": "2026-07-04T19:16:20.043Z",
         "inputs": {
           "homeElo": 1680,
           "awayElo": 2065,
@@ -21242,13 +21236,16 @@
       "team1": "Canada",
       "team2": "Morocco",
       "venue": "Houston",
-      "score": null,
-      "result": null,
-      "status": "scheduled",
+      "score": {
+        "home": 0,
+        "away": 3
+      },
+      "result": "away",
+      "status": "finished",
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.013Z",
+        "generatedAt": "2026-07-04T19:16:20.043Z",
         "inputs": {
           "homeElo": 1655,
           "awayElo": 1840,
@@ -21482,7 +21479,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.013Z",
+        "generatedAt": "2026-07-04T19:16:20.043Z",
         "inputs": {
           "homeElo": 2045,
           "awayElo": 1775,
@@ -21716,7 +21713,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.013Z",
+        "generatedAt": "2026-07-04T19:16:20.043Z",
         "inputs": {
           "homeElo": 1805,
           "awayElo": 1995,
@@ -21950,7 +21947,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.013Z",
+        "generatedAt": "2026-07-04T19:16:20.043Z",
         "inputs": {
           "homeElo": 1975,
           "awayElo": 2035,
@@ -22184,7 +22181,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.013Z",
+        "generatedAt": "2026-07-04T19:16:20.043Z",
         "inputs": {
           "homeElo": 1815,
           "awayElo": 1875,
@@ -22418,7 +22415,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.013Z",
+        "generatedAt": "2026-07-04T19:16:20.043Z",
         "inputs": {
           "homeElo": 2025,
           "awayElo": 1705,
@@ -22652,7 +22649,7 @@
       "odds": {
         "source": "Model: Elo + Poisson + margin",
         "modelVersion": "elo-poisson-margin-v1",
-        "generatedAt": "2026-07-04T18:44:24.013Z",
+        "generatedAt": "2026-07-04T19:16:20.043Z",
         "inputs": {
           "homeElo": 1845,
           "awayElo": 1905,
